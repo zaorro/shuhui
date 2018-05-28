@@ -42,6 +42,7 @@ a:hover{
 }
 .left{
   float: left;
+  overflow-x: auto;
 }
 .left>a{
   display: inline-block;
