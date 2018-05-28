@@ -34,6 +34,7 @@ a:hover{
   position: fixed;
   top: 0;
   left: 0;
+  overflow-x: auto;
 }
 .container{
   width: 1060px;
@@ -42,7 +43,6 @@ a:hover{
 }
 .left{
   float: left;
-  overflow-x: auto;
 }
 .left>a{
   display: inline-block;
