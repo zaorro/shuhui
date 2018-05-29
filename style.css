@@ -1,77 +1,327 @@
-/*reset*/
-.clearfix::after{
-  clear: both;
-  content: '';
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-.clearfix{zoom: 1;}
-
-body{
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  font-family: Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
-}
-a{
-  color: #000;
-  text-decoration: none;
-}
-a:hover{
-  color: #fe7357;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
 /*header*/
-.header{
+header{
   width: 100%;
   height: 80px;
-  line-height: 50px;
+  line-height: 80px;
   background-color: #fff;
-  box-shadow: 1px 1px 3px 0 #fe7357;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+  overflow-x: auto;
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
-  overflow-x: auto;
 }
 .container{
-  width: 1060px;
+  width: 1100px;
   margin: 0 auto;
-  padding-top: 15px;
 }
-.left{
+.logo{
   float: left;
+  height: 60px;
+  margin-top: 10px;
 }
-.left>a{
-  display: inline-block;
+.logo img{
+  height: 60px;
+}
+nav{
   float: left;
-  margin: 0 10px;
+  padding: 0 10px;
 }
-.right{
+.nav_list{
+  font-size: 16px;
+}
+.nav_list li{
+  float: left;
+  padding: 0 10px;
+}
+.login{
   float: right;
 }
-.right .login>a{
-  display: inline-block;
+.login_list{
+  font-size: 14px;
+}
+.login_list li{
+  float: left;
+  padding: 0 10px;
+}
+
+/*main*/
+.main{
+  width: 1080px;
+  margin: 0 auto;
+  padding: 85px 10px 10px 10px;
+  background-color: #fff;
+}
+/*slider*/
+.slider{
+  padding: 10px;
+}
+.slider img{
+  width: 1060px;
+  height: 312px;
+}
+/*subscribe*/
+.subscribe{
+  border-top: 1px solid #ccc;
+}
+.subscribe_left{
+  float: left;
+  width: 810px;
+  box-sizing: border-box;
+}
+.subscribe_left_title{
+  margin: 15px 0;
+  vertical-align: bottom;
+}
+.subscribe_left_title h2, .cartoon_left h2, .cartoon_right h2{
+  display: inline;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.subscribe_left_title span{
+  font-size: 14px;
   margin: 0 10px;
 }
-.header_logo img{
+.subscribe_left_login{
+  font-size: 14px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 15px 0;
+  border: 1px solid #ccc;
+}
+.subscribe_left_login .btn{
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+}
+.subscribe_left_login .btn1{
+  background-color: #f00;
+}
+.subscribe_left_login .btn2{
+  background-color: #44aca7;
+}
+
+.subscribe_right{
+  float: right;
+  width: 270px;
+  margin: 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/*cartoon*/
+.cartoon{
+  border-top: 1px solid #ccc;
+}
+.cartoon_left{
   float: left;
-  height: 50px;
+  width: 810px;
+  box-sizing: border-box;
+}
+.cartoon_left h2{
+  display: inline;
+}
+.cartoon_right{
+  float: right;
+  width: 270px;
+  box-sizing: border-box;
+}
+.sub_nav{
+  display: inline;
+}
+.sub_nav li{
+  display: inline;
+  margin: 0 10px;
+}
+.cartoon_content{
+  float: left;
+  width: 142px;
+  height: 245px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.cartoon_list{
+  float: left;
+  width: 142px;
+  height: 200px;
+  position: relative;
+}
+.cartoon_list img{
+  width: 142px;
+  height: 200px;
+}
+.follow{
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  border-bottom-left-radius: 5px;
+}
+.follow:hover{
+  opacity: 0.8;
+}
+.cartoon_list_title{
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-align: right;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.cartoon_list_title a{
+  color: #fff;
+  font-size: 14px;
+}
+.cartoon_list_title a:hover{
+  color: #f00;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.cartoon_list_content{
+  font-size: 14px;
+}
+.cartoon_list_content2{
+  color: #999;
+  font-weight: 100;
+  font-size: 13px;
+}
+.update_list{
+}
+.update_list li{
+  float: left;
+  width: 125px;
+  height: 35px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: #eee;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.main{
-  background: linear-gradient(70deg, black, white);
-  width: 1060px;
-  height: 5000px;
+.update_list_img img{
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.update_list_title{
+  display: block;
+  font-size: 12px;
+  margin-left: 40px;
+}
+.update_list_content{
+  color: #666;
+  font-size: 12px;
+  margin-left: 40px;
+}
+.update_list_content span{
+  color: #f00;
+  margin-left: 5px;
+}
+
+/*article*/
+.article{
+  border-top: 1px solid #ccc;
+}
+.article_left{
+  float: left;
+  width: 810px;
+}
+.article_right{
+  float: right;
+  width: 270px;
+}
+.article_left_list{
+  width: 250px;
+  height: 140px;
+  position: relative;
+}
+.article_left_list img{
+  height: 140px;
+}
+.article_left_list .inner_tag{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.article_left_innercontent{
+  float: left;
+  width: 250px;
+  margin: 10px;
+}
+.content_title{
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.time{
+  color: #999;
+  font-size: 14px;
+  font-weight: 100;
+}
+.side_list{
+  font-size: 14px;
+  padding-top: 20px;
+}
+.side_list_title{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+.side_list_box{
+  display: block;
+  position: relative;
+}
+.side_list_time{
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+.side_list_num{
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.side_list_price{
+  color: #f00;
+}
+.red{
+  color: #f00;
+}
+
+footer{
+  padding: 30px 0;
+  background-color: #000;
+}
+.footer_container{
+  width: 1080px;
   margin: 0 auto;
+  text-align: center;
 }
-
-@media (min-width: 414px) and (max-width:736px) {
-  .container{
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 15px;
-  }
+.footer_container p {
+  font-size: 14px;
+  color: #ccc;
 }
