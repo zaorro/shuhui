@@ -173,9 +173,6 @@ header{
   font-size: 14px;
   line-height: 16px;
   padding: 5px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .content_list_wrap p a{
   color: #000;
@@ -279,4 +276,125 @@ header{
   position: absolute;
   right: 4px;
   bottom: 2px;
+}
+/*article*/
+.article{
+  border-top: 1px solid #eee;
+}
+.imgbox2{
+  width: 250px;
+  height: 140px;
+  position: relative;
+}
+.imgbox2 img{
+  width: 250px;
+  height: 140px;
+}
+.imgbox2 h3{
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  height: 25px;
+  line-height: 25px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.imgbox2 h3 a{
+  color: #fff;
+  display: block;
+  padding: 0 10px;
+}
+.imgbox2 h3 a:hover{
+  color: #4285f4;
+}
+.content_list_wrap2{
+  width: 250px;
+}
+.content_list .content_list_wrap2{
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 15px;
+}
+.content_list_wrap2 p{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 5px 0;
+}
+.content_list_wrap2 p a{
+  color: #000;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content_list_wrap2 p a:hover{
+  color: #4285f4;
+}
+.content_list_wrap2 span{
+  color: #999;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content_link{
+  width: 250px;
+  height: 24px;
+  padding-right: 40px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+.content_link .num{
+  display: inline-block;
+  font-size: 14px;
+  padding-right: 5px;
+}
+.content_link .time{
+  color: #999;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.content_link a{
+  color: #000;
+  font-size: 14px;
+}
+.content_link a:hover{
+  color: #4285f4;
+}
+footer{
+  height: 60px;
+  background-color: #000;
+}
+.copyright{
+  padding-top: 15px;
+  text-align: center;
+}
+.copyright p{
+  color: #eee;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 100;
+}
+.copyright p a{
+  color: #f00;
+}
+.copyright p a:hover{
+  color: rgba(255, 0, 0, 0.9);
 }
